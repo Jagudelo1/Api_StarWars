@@ -1,0 +1,27 @@
+.NavbarContainers{
+    background-color: rgb(26, 26, 26);
+}
+
+.title_star{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title_star:hover{
+    color: white;
+}
+
+.Textos, .linkto{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Textos:hover{
+    color: red;
+}
+
+.linkto:hover{
+    color: red;
+}
