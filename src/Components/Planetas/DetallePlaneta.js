@@ -21,9 +21,7 @@ export const DetallePlaneta = () => {
             <NavbarApp />
 
             <button className='boton_atras'>
-                <a href='../Planetas'>
-                    <FaReply size={30} />
-                </a>
+                <a href='../Planetas'> <FaReply size={30} /></a>
             </button>
 
             <div className='Detalles_person'>
@@ -42,6 +40,29 @@ export const DetallePlaneta = () => {
                     <h6>Terreno: {dato.terrain} </h6>
                     <h6>Superficie del Agua: {dato.surface_water} </h6>
                     <h6>Poblacion: {dato.population} </h6>
+                </div>
+            </div>
+
+            <div className='tajetasdetalle'>
+                <div>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Text className='Card_Text'>N/A</Card.Text>
+                    </Card>
+                </div>
+                <div>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Text className='Card_Text'>N/A</Card.Text>
+                    </Card>
+                </div>
+                <div>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Text className='Card_Text'>N/A</Card.Text>
+                    </Card>
+                </div>
+                <div>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Text className='Card_Text'>N/A</Card.Text>
+                    </Card>
                 </div>
             </div>
 
