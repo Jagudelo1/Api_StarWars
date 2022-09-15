@@ -13,7 +13,9 @@ export const NavbarApp = () => {
     <Navbar className='NavbarContainers' expand="lg">
       <Container>
         <Navbar.Brand href="#home" className='title_star'>
-          Star Wars App
+          <Link className='linkp' to='/'>
+            Star Wars App
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

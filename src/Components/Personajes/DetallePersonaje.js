@@ -43,22 +43,22 @@ export const DetallePersonaje = () => {
       <div className='tajetasdetalle'>
         <div>
           <Card style={{ width: '18rem' }}>
-            <Card.Text>N/A</Card.Text>
+            <Card.Text className='Card_Text'>N/A</Card.Text>
           </Card>
         </div>
         <div>
           <Card style={{ width: '18rem' }}>
-            <Card.Text>N/A</Card.Text>
+            <Card.Text className='Card_Text'>N/A</Card.Text>
           </Card>
         </div>
         <div>
           <Card style={{ width: '18rem' }}>
-            <Card.Text>N/A</Card.Text>
+            <Card.Text className='Card_Text'>N/A</Card.Text>
           </Card>
         </div>
         <div>
           <Card style={{ width: '18rem' }}>
-            <Card.Text>N/A</Card.Text>
+            <Card.Text className='Card_Text'>N/A</Card.Text>
           </Card>
         </div>
       </div>

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 const HomeApp = () => {
   return (
-    <div>
+    <div className='App'>
       <NavbarApp />
       <SliderApp />
       <TextApp />

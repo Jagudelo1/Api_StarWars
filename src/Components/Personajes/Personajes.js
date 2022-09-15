@@ -21,7 +21,7 @@ export const AllPersonajes = () => {
     }, [personajes]);
 
     return (
-        <>
+        <div className='ContainerPrincipal'>
             <h1 className='title_person'>Personajes</h1>
             <div className='Container_Card'>{
                 personajes !== null ?
@@ -62,6 +62,6 @@ export const AllPersonajes = () => {
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

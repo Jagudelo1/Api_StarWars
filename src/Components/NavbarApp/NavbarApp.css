@@ -2,6 +2,15 @@
     background-color: rgb(26, 26, 26);
 }
 
+.linkp{
+    text-decoration: none;
+    color: white;
+}
+
+.linkp:hover{
+    color: red;
+}
+
 .title_star{
     color: white;
     font-weight: 900;

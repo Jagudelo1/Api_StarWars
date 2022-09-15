@@ -45,3 +45,14 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
+.Card_Text{
+    margin: 20px;
+}
+
+@media (max-width: 768px){
+    .tajetasdetalle{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

@@ -71,3 +71,10 @@
     color: black;
     box-shadow: 1px 1px 5px red;
   }
+
+  @media (max-width: 768px){
+      .flip-container{
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+  }
