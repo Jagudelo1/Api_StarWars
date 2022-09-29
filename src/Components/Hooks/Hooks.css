@@ -1,113 +1,117 @@
-.Container_Card{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
+.Container_Card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  padding: 20px;
+  gap: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.Container_Hijo{
-    margin: 0 auto;
-    margin-bottom: 40px;
-    background-color: black;
-    color: white;
+.Container_Hijo {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: black;
+  color: white;
 }
 
-.title_person{
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 0 5px 5px red;
-    font-weight: 800;
-    margin-top: 20px;
+.title_person {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 5px 5px red;
+  font-weight: 800;
+  margin-top: 20px;
 }
 
-.scroll{
-    max-height: 130px;
-    overflow-y: auto;;
+.scroll {
+  max-height: 130px;
+  overflow-y: auto;
+  ;
 }
 
-.scroll::-webkit-scrollbar{
-    width: 5px;
-    height: 4px;
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
 }
 
-.scroll::-webkit-scrollbar-thumb{
-    background-color: blue;
+.scroll::-webkit-scrollbar-thumb {
+  background-color: blue;
 }
 
-.ContainerPaginacion ul{
-    list-style: none;
-    display: inline-block;
+.ContainerPaginacion ul {
+  list-style: none;
+  display: inline-block;
 }
 
-.ContainerPage b{
-    margin-left: 12px;
-    margin-right: 12px;
-    font-size: larger;
-    color: white;
-    text-shadow: 0 0 4px red;
+.ContainerPage b {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: larger;
+  color: white;
+  text-shadow: 0 0 4px red;
 }
 
-.tituloPlanetas{
-    grid-column: 1 / 4;
-    text-align: center;
-    color: white;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+.tituloPlanetas {
+  grid-column: 1 / 4;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 /*Boton de detalle*/
-.Container_Hijo button{
-    margin-left: 35%;
-    margin-top: 10px;
-    background-color: red;
-    border: 0;
+.Container_Hijo button {
+  margin-left: 35%;
+  margin-top: 10px;
+  background-color: red;
+  border: 0;
 }
 
 
-.boton_detalle a{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+.boton_detalle a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 
-.boton_detalle a:hover{
-    color: black;
+.boton_detalle a:hover {
+  color: black;
 }
 
 /*Boton siguiente y atras*/
-.ContainerPage{
-    grid-column: 1 / 4;
-    display: flex;
-    justify-content: center;
+.ContainerPage {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: center;
 }
 
-.ContainerPage button{
-    border-radius: 12px;
-    background-color: black;
-    font-weight: 600;
-    color: white;
-    box-shadow: 0 2px 3px 3px white;
+.ContainerPage button {
+  border-radius: 12px;
+  background-color: black;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 2px 3px 3px white;
 }
 
-.ContainerPage button:hover{
-    background-color: aqua;
-    color: black;
-    font-weight: 600;
+.ContainerPage button:hover {
+  background-color: aqua;
+  color: black;
+  font-weight: 600;
 }
 
 /*Boton atras DetallePersonaje*/
-.boton_atras{
-    background-color: transparent;
-    border: none;
-    border-radius: 6px;
-    margin: 10px;
-    padding: 10px;
-    width: 80px;
-    font-weight: 700;
-    color: white;
+.boton_atras {
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 10px;
+  width: 80px;
+  font-weight: 700;
+  color: white;
 }
 
-.boton_atras:hover{
-    color: gray;
+.boton_atras:hover {
+  color: gray;
 }

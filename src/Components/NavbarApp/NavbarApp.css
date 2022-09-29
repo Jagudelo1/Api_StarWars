@@ -1,36 +1,49 @@
-.NavbarContainers{
-    background-color: rgb(26, 26, 26);
+.NavbarContainers {
+  background-color: rgb(0 0 0);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
-.linkp{
-    text-decoration: none;
-    color: white;
+.linkp {
+  text-decoration: none;
+  color: white;
 }
 
-.linkp:hover{
-    color: red;
+.linkp:hover {
+  color: red;
 }
 
-.title_star{
-    color: white;
-    font-weight: 900;
-    text-transform: uppercase;
+.title_star {
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.title_star:hover{
-    color: white;
+.title_star:hover {
+  color: white;
 }
 
-.Textos, .linkto{
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
+.Textos,
+.linkto {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.Textos:hover{
-    color: red;
+.linkto {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 5px;
+  transition: color .3s ease-in;
 }
 
-.linkto:hover{
-    color: red;
+.Textos:hover {
+  color: red;
+}
+
+.linkto:hover {
+  color: red;
 }
