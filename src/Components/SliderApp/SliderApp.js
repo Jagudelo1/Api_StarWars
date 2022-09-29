@@ -15,7 +15,7 @@ export const SliderApp = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Pasate al Lado Oscuro</h3>
+                        <h3>La Grandiosa Estrella de la Muerte</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -26,7 +26,7 @@ export const SliderApp = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>La Grandiosa Estrella de la Muerte</h3>
+                        <h3>Unete a la Resistencia</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,7 +37,7 @@ export const SliderApp = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Unete a la Resistencia</h3>
+                        <h3>Pasate al Lado Oscuro</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

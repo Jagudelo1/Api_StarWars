@@ -8,6 +8,9 @@ import { unicoPersonaje } from '../Hooks/FuncionesPerson';
 import Personajes from '../Img/Personaje.jpg';
 import { NavbarApp } from '../NavbarApp/NavbarApp';
 import Vehicles from './Vehicles';
+import Films from './Films';
+import Starships from './Starships';
+import Species from './Species';
 
 export const DetallePersonaje = () => {
   const [data, setData] = useState([]);
@@ -41,10 +44,34 @@ export const DetallePersonaje = () => {
         </div>
       </div>
 
-      <div className='tajetasdetalle'>
+      <div className='tajetasdetalle films'>
+        {
+          data?.films?.map((item2, index2) => {
+            return <Films url={item2} key={index2} />
+          })
+        }
+      </div>
+
+      <div className='tajetasdetalle species'>
+        {
+          data?.species?.map((item4, index4) => {
+            return <Species url={item4} key={index4} />
+          })
+        }
+      </div>
+
+      <div className='tajetasdetalle vehicles'>
         {
           data?.vehicles?.map((item, index) => {
             return <Vehicles url={item} key={index} />
+          })
+        }
+      </div>
+
+      <div className='tajetasdetalle starships'>
+        {
+          data?.starships?.map((item3, index3) => {
+            return <Starships url={item3} key={index3} />
           })
         }
       </div>

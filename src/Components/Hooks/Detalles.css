@@ -23,7 +23,33 @@
   height: auto;
 }
 
-.tajetasdetalle .card::after {
+.films .card::after {
+  content: 'Peliculas';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: red;
+  color: white;
+  padding: 0.3em;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 0 6px 0 6px;
+}
+
+.species .card::after {
+  content: 'Especies';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: red;
+  color: white;
+  padding: 0.3em;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 0 6px 0 6px;
+}
+
+.vehicles .card::after {
   content: 'Vehículos';
   position: absolute;
   right: 0;
@@ -35,6 +61,20 @@
   font-weight: bold;
   border-radius: 0 6px 0 6px;
 }
+
+.starships .card::after {
+  content: 'Naves';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: red;
+  color: white;
+  padding: 0.3em;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 0 6px 0 6px;
+}
+
 
 .front {
   position: absolute;
@@ -76,11 +116,4 @@
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
   font-size: 15px;
-}
-
-@media (max-width: 768px) {
-  .tajetasdetalle {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
 }

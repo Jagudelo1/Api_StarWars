@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export const FooterApp = () => {
     return (
@@ -17,7 +18,7 @@ export const FooterApp = () => {
                     </p>
                 </div>
                 <div className='N2'>
-                    <h2>StarWars</h2><hr />
+                    <h2><Link to='/'>StarWars</Link></h2><hr />
                     <FaFacebook size={35} style={{ color: "blue" }} className='Icons_Star' />
                     <FaInstagram size={35} style={{ color: "purple" }} className='Icons_Star' />
                     <FaTwitter size={35} style={{ color: "aqua" }} className='Icons_Star' />
