@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { FooterApp } from '../FooterApp/FooterApp';
-import { NavbarApp } from '../NavbarApp/NavbarApp';
-import { unicoPersonaje } from '../Hooks/FuncionesPerson';
-import { useParams } from 'react-router-dom';
-import { FaReply } from 'react-icons/fa';
 import Card from 'react-bootstrap/Card';
-import Personajes from '../Img/Personaje.jpg'
+import { FaReply } from 'react-icons/fa';
+import { Link, useParams } from 'react-router-dom';
+import { FooterApp } from '../FooterApp/FooterApp';
 import '../Hooks/Detalles.css';
+import { unicoPersonaje } from '../Hooks/FuncionesPerson';
+import Personajes from '../Img/Personaje.jpg';
+import { NavbarApp } from '../NavbarApp/NavbarApp';
+import Vehicles from './Vehicles';
 
 export const DetallePersonaje = () => {
-  const [ data, setData ] = useState([]);
+  const [data, setData] = useState([]);
 
   const idByParams = useParams();
   const personaje = unicoPersonaje(idByParams.name);
 
-  useEffect(() => { personaje.then(res => setData(res)) }, []);
+  useEffect(() => { personaje.then(res => setData(res)) }, [personaje]);
 
   return (
     <div>
       <NavbarApp />
       <button className='boton_atras'>
-        <a href='../Personajes'> <FaReply size={30} /></a>
+        <Link to='/Personajes'> <FaReply size={30} /></Link>
       </button>
       <div className='Detalles_person'>
         <div className='CardDetalle'>
@@ -41,27 +42,14 @@ export const DetallePersonaje = () => {
       </div>
 
       <div className='tajetasdetalle'>
-        <div>
-          <Card style={{ width: '18rem' }}>
-            <Card.Text className='Card_Text'>N/A</Card.Text>
-          </Card>
-        </div>
-        <div>
-          <Card style={{ width: '18rem' }}>
-            <Card.Text className='Card_Text'>N/A</Card.Text>
-          </Card>
-        </div>
-        <div>
-          <Card style={{ width: '18rem' }}>
-            <Card.Text className='Card_Text'>N/A</Card.Text>
-          </Card>
-        </div>
-        <div>
-          <Card style={{ width: '18rem' }}>
-            <Card.Text className='Card_Text'>N/A</Card.Text>
-          </Card>
-        </div>
+        {
+          data?.vehicles?.map((item, index) => {
+            return <Vehicles url={item} key={index} />
+          })
+        }
       </div>
+
+
       <FooterApp />
     </div>
   )
